@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 목록</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/list.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- 헤더 -->
+        <div class="header">
+            <h1><i class="bi bi-journal-text"></i> 게시판</h1>
+            <p class="mb-0">자유롭게 글을 읽고 소통해보세요</p>
+        </div>
+
+        <!-- 게시글 목록 -->
+        <div class="board-container" id="boardContainer">
+            <div class="board-header">
+                <i class="bi bi-list-ul me-2"></i>자유게시판
+            </div>
+
+            <div class="list-group list-group-flush" id="postsList">
+                <!-- 게시글 1 - 강조된 제목 -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="post-row">
+                        <div class="post-content">
+                            <h6 class="post-title highlighted-title">
+                                정니 지금 감성안맞아서 눈 말똥말똥 뜨면서 애써 웃는 척 하는 중 ㅋㅋㅋㅋㅋ
+                            </h6>
+                        </div>
+                        <div class="post-meta">
+                            <span class="comment-count">3</span>
+                            <span class="post-time">19:26</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 게시글 2 -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="post-row">
+                        <div class="post-content">
+                            <h6 class="post-title">
+                                나머지는 알아서 뒤에가서 처박혔는데 한번만 논지가없는 ㄷㄷㄷㄷㄷㄷ
+                            </h6>
+                        </div>
+                        <div class="post-meta">
+                            <span class="comment-count">5</span>
+                            <span class="post-time">19:26</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="empty-state">
+                <div class="text-center py-5">
+                    <i class="bi bi-journal-x display-1 text-muted"></i>
+                    <h5 class="mt-3 text-muted">게시글이 없습니다</h5>
+                    <p class="text-muted">첫 번째 글을 작성해보세요!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 추가 기능 버튼들 -->
+        <div class="d-flex justify-content-end mt-4">
+            <div>
+                <button class="btn btn-primary me-3">
+                    <i class="bi bi-pencil-square"></i> 글쓰기
+                </button>
+            </div>
+        </div>
+
+        <!-- 페이지네이션 -->
+        <nav class="mt-4">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">이전</a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">다음</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/list.js"></script>
+</body>
+
+</html>
